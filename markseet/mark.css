@@ -1,0 +1,153 @@
+*{
+
+
+}
+.all{
+   border: 1px solid black;
+   width: 920px;
+   height: 1015px;
+   margin: auto;
+   background-color: rgb(198, 224, 191);
+   padding-top: 10px;
+
+}
+
+.main_border{
+    border: 1px solid black;
+    width: 900px;
+   margin: auto;
+   background-image: linear-gradient(to right,rgb(253, 227, 195),rgb(215, 247, 215),rgb(253, 227, 195)); 
+
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.loga_photo{
+    display: flex;
+}
+.loga_photo img{
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    
+}
+.msu h1,h6,h4{
+    text-indent: 50px;
+    line-height: 3px;
+}
+.msu h4{text-indent: 120px;}.msu p{text-indent: 100px;}
+.my_photo img{
+    height: 100px;
+    width: 100px;
+    padding: 25px;
+}
+.first_table ,tr td{
+    border: 1px solid black;
+    width: 900px;
+    /* border-left: none;
+    border-right: none; */
+    text-align: center;
+    border-collapse: collapse;
+    font-size:13px;
+    
+}
+/* .parent_border{
+    border-collapse: collapse;
+}
+.par{
+    border: 1px solid black;
+    border-top: none ;
+   
+    
+} */
+ .mark_tamle {
+    margin-top: 3px;
+    border-collapse:collapse ;
+    border: 1px solid black;
+    z-index: 1;
+    
+   
+ }
+ .mark_tamle::before{
+    content: "";
+    position: absolute;
+    height: 250px;
+    width: 300px;
+    top: 500px;
+    left: 500px;
+     background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    opacity: 0.2    ;
+    z-index: 0;
+ }
+ .mark_tamle td{
+    border-right: 1px solid black;
+    border-bottom: none;
+    border-top:none ;
+
+    
+ }
+  .mark_tamle th{
+    border-right:1px solid black ;
+    border-bottom:1px solid black ;
+  }
+ 
+ .end_table,tr,td{
+    border-collapse: collapse;
+    margin-top: 3px;
+ }
+ .sign{
+    height: 75px;
+    width: 250px;
+    background-color:rgba(180, 180, 180, 0.911);
+    margin-left:650px;
+    margin-top: 5px;
+
+ }
+ .sign img{
+    width: 150px;
+    position: relative;
+    left: 40px;
+    top:5px;
+ }
+ .sign h5{
+    text-indent: 20px;
+ }
+ .sign p{
+   display: inline;
+   position: relative;
+   left: 40px;
+   top:10px;
+ }
+ .mysign{
+    position: absolute;
+    left: 170px;
+    top: 950px;
+    
+ }
+ 
+ .mysign img{
+    width: 200px;
+    height: 40px;
+    
+ }
+ .mysign h6{
+   position: relative;
+   bottom: 10px;
+   left: 50px;
+    text-indent: 20px;
+ }
+ td{
+   font-family:'Times New Roman', Times, serif;
+   
+ }
+
+ 
+
+
+
+

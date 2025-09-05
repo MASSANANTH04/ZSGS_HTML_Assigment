@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="regester.css">
+    <script src="https://kit.fontawesome.com/242f32a9ce.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="regester">
+    <h1><i class="fa-solid fa-file-pen" ></i>    </h1>
+    <h1 >Register Form</h1>
+    </div>
+    
+    <h2 class="mydeatiles"><i class="fa-solid fa-person" id="personicon"></i>Personal Details</h2>
+    <div class="main">
+        <div class="form_first">
+            
+            <label for="" class="requered"><i class="fa-solid fa-user"></i> Employee Id:</label><br>
+            <input type="text" name="" id="empId" placeholder="Employe Id"><br>
+            <span class="error" id="empIdError">Enter valid Employee ID</span>
+
+            <label  for="name"><i class="fa-solid fa-signature" ></i>Name:</label><br>
+            <input name="name" type="text" placeholder="Enter Name" id="name" required minlength="3"><br>
+            <span class="error" id="nameError">Enter valid name (min 3 letters)</span>
+
+            <label ><i class="fa-solid fa-face-smile"></i>Age:</label><br>
+            <input type="number"placeholder="Enter Age" id="age" min="15" max="80"><br>
+             <span class="error" id="ageError">Enter age between 18 and 60</span>
+            
+
+            <label class="requered"><i class="fa-solid fa-calendar-days"></i>Date Of Birth:</label><br>
+            <input type="date" name="" id="dob"><br>
+             <span class="error" id="dobError">Select your DOB</span>
+
+            <label for=""class="requered"><i class="fa-solid fa-mars-and-venus-burst"></i>Genter:</label><br>
+            <input type="radio" name="genter" id="" value="">
+            <label for=""><i class="fa-solid fa-mars"></i>Male</label>
+            <input type="radio" name="genter" id="" value="">
+            <label for=""><i class="fa-solid fa-mars-and-venus"></i>Female</label>
+            <input type="radio" name="genter" id="" value="">
+            <label for=""><i class="fa-solid fa-transgender"></i>Other</label><br>
+             
+
+            <label for=""class="requered"><i class="fa-solid fa-envelope" ></i>Email id:</label><br>
+            <input type="email" placeholder="Email Id" id="email" ><br>
+             <span class="error" id="emailError">Enter valid email</span>
+
+            <label for=""class="requered"><i class="fa-solid fa-phone"></i>Phone No:</label><br>
+            <input type="number" name="" id="phone" placeholder="Phone number"><br>
+             <span class="error" id="phoneError">Enter 10 digit number</span>
+
+            <label for=""class="requered"><i class="fa-solid fa-id-card"></i>Aadhaar Number:</label><br>
+            <input type="number" name=""placeholder="Aadharr Number"id="aadhaar"><br>
+            <span class="error" id="aadhaarError">Enter 12 digit Aadhaar</span>
+
+            <label for=""class="requered"><i class="fa-solid fa-id-card-clip"></i>PAN Number</label><br>
+            <input type="text" placeholder="PAN Number" id="pan" ><br>
+            <span class="error" id="panError">Enter valid PAN (ABCDE1234F)</span>
+
+            <label for=""><i class="fa-solid fa-briefcase"></i> Work Experience</label><br>
+            <input type="year" placeholder="Per Month/Year"><br>
+
+            <label for=""class="requered"><i class="fa-solid fa-droplet"></i>Blood Group:</label><br>
+            <input type="text" name=""placeholder="Blood Type" id="blood"><br>
+            <span class="error" id="bloodError">Enter valid blood group</span>
+            
+            <label for=""class="requered"><i class="fa-solid fa-child"></i>Father's Name:</label><br>
+            <input type="text" name=""  placeholder="Father's Name"  id="father" ><br>
+             <span class="error" id="fatherError">Enter valid name</span>
+
+            <label for=""class="requered"><i class="fa-solid fa-child-dress"></i>Mother's Name:</label><br>
+            <input type="text" name="" placeholder="Mother's Name" id="mother"><br>
+              <span class="error" id="motherError">Enter valid name</span>
+            
+
+            
+
+            
+        </div>
+        <div class="form_secound">
+              <label for=""class="requered"><i class="fa-solid fa-location-dot"></i>Present Address</label><br>
+              
+              <input type="text"placeholder="Street Name"  id="street" >
+              <span class="error" id="streetError">Enter street name</span>
+
+              <input type="text"placeholder="Locally"  id="locality"><br>
+              <span class="error" id="localityError">Enter locality</span>
+              
+              <input type="text" name=""  placeholder="District"  id="district">
+               <span class="error" id="districtError">Enter district</span>
+
+              <input type="number" placeholder="Pin Code" id="pincode"><br>
+               <span class="error" id="pincodeError">Enter valid 6-digit pin code</span>
+
+              <select id="country" class="conuntry">
+                <option value="">-select-Conuntry</option>
+                <option value="">India</option>
+                <option value="">USA</option>
+              </select>
+               <span class="error" id="countryError">Select country</span>
+
+              <select class="conuntry"  id="state"style="width: 100px; ">
+                <option value="" >-select-State</option>
+                <option value="">TamilNadu</option>
+                <option value="">Kerala</option>
+                <option value="">Mumbai</option>
+              </select><br><br>
+               <span class="error" id="stateError">Select state</span>
+
+              <label for=""class="requered"><i class="fa-solid fa-house"></i>Perment Address</label><br><br>
+            <div class="paddress"> 
+                <input type="checkbox" style="width: 20px;"id="sameAddress">
+                <label for="">Same As Present Address</label>
+            </div>
+              <input type="text"placeholder="Street Name" id="per_street">
+              <input type="text"placeholder="Locally" id="per_locality"><br>
+              <input type="text" name=""  placeholder="District" id="per_district">
+              <input type="number" placeholder="Pin Code"  id="per_pincode"><br>
+              <select name=""  class="conuntry" id="per_country">
+                <option value="">-select-Conuntry</option>
+                <option value="">India</option>
+                <option value="">USA</option>
+              </select>
+              <select class="conuntry"  id="per_state"style="width: 100px;">
+                <option value="" >-select-State</option>
+                <option value="">TamilNadu</option>
+                <option value="">Kerala</option>
+                <option value="">Mumbai</option>
+              </select><br><br>
+              <div class="bank">
+              <label for=""class="requered"><u><i class="fa-solid fa-building-columns"></i>Bank Details</u></label><br>
+              <label for="">Bank Name:</label>
+              <input type="text"placeholder="Bank name" id="bank"><br>
+                <span class="error" id="bankError">Enter bank name</span>
+
+              <label for=""class="requered">Account No:</label>
+              <input type="number" placeholder="eg:123" style="margin-left: 22px;" id="account"><br>
+              <span class="error" id="accountError">Enter valid account number</span>
+
+              <label for=""class="requered">IFSE code:</label>
+              <input type="text" name="" placeholder="ex:IOB01" style="margin-left: 29px;"  id="ifsc"><br>
+               <span class="error" id="ifscError">Enter valid IFSC (eg: IOB0001234)</span>
+
+              <label for=""class="requered">Upload Passbook</label>
+              <input type="file" id="passbook"  value=""style="margin-left: 18px;
+    font-size:12px;
+    background-color: transparent;">
+               <span class="error" id="passbookError">Upload passbook</span>
+              </div>
+              
+              <div class="idprof">
+              <label for=""class="requered"><i class="fa-solid fa-file"></i></i>Resume</label>
+              <input type="file" id="resume"><br>
+               <span class="error" id="resumeError">Upload resume</span>
+
+              <label for=""class="requered"><i class="fa-solid fa-star"></i>ID Profe</label>
+              <input type="file" id="idproof">
+               <span class="error" id="idproofError">Upload ID proof</span>
+
+              </div><br> <br><br>
+              
+        </div>
+    </div>
+           <div class="ansbutton">
+          <button class="reset" id="resetBtn" type="reset">Reset</button>  
+          <button class="submit" id="fullForm" type="submit">Submit</button>
+        </div>
+   <script> document.getElementById("resetBtn").addEventListener("click", function () {
+    location.reload();
+  });</script>
+  <script src="regester.js"></script>
+
+</body>
+</html>
